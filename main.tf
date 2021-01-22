@@ -1,6 +1,5 @@
 provider "aws" {
-  version = "~> 3.0"
-  region  = var.region
+  region = var.region
 }
 
 resource "aws_vpc" "hashicat" {
@@ -8,7 +7,7 @@ resource "aws_vpc" "hashicat" {
   enable_dns_hostnames = true
 
   tags = {
-    name = "${var.prefix}-vpc-${var.region}"
+    name        = "${var.prefix}-vpc-${var.region}"
     environment = "Production"
   }
 }
