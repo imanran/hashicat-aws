@@ -10,7 +10,7 @@ terraform {
     hostname     = "app.terraform.io"
     organization = "iman-hashicorp"
     workspaces {
-      name = "doesnotexist"
+      name = "hashicat-aws"
     }
   }
 }
